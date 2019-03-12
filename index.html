@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Carter+One|Fredericka+the+Great|Indie+Flower|Lato" rel="stylesheet">
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <!-- Welcome Page -->
+    <div class="container">
+            <h1>Animals Tic-Tac-Toe</h1>
+        <div class="welcome">
+            <div class='players'>
+                <div class="player">
+                    <div class='title'>Player 1</div>
+                    <div class="character">
+                        <div class="picked animated infinite jello" id='player01Id'>🦁</div>
+                        <div class="pickFrom" id='player01IdOptions'>
+                            <div class="row">
+                                <div id="lion">🦁</div>
+                                <div id='tiger'>🐯</div>
+                                <div id='horse'>🐴</div>
+                                <div id='hamster'>🐹</div>
+                                <div id='bear'>🐻</div>
+                            </div>
+                            <div class="row">
+                                <div id="lion">🦄</div>
+                                <div id='tiger'>🐨</div>
+                                <div id='horse'>🐔</div>
+                                <div id='hamster'>🐧</div>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <input type="text" id='player01Name' placeholder='Player 01'>
+                </div>
+                <div class="player">
+                    <div class='title'>Player 2</div>
+                    <div class="character">
+                        <div class="picked animated infinite jello" id='player02Id'>🐹</div>
+                        <div class="pickFrom" id='player02IdOptions'>
+                            <div class="row">
+                                <div id="lion">🦁</div>
+                                <div id='tiger'>🐯</div>
+                                <div id='horse'>🐴</div>
+                                <div id='hamster'>🐹</div>
+                                <div id='bear'>🐻</div>
+                            </div>
+                            <div class="row">
+                                <div id="lion">🦄</div>
+                                <div id='tiger'>🐨</div>
+                                <div id='horse'>🐔</div>
+                                <div id='hamster'>🐧</div>
+                                <div id='bear'>🤖</div>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <input type="text" id='player02Name' placeholder='Player 02'>
+                </div>
+            </div>
+            <button id='play'>Play</button>
+
+        </div>
+    </div>
+    <div class="container game">
+        <div class="header">
+            <div id="message"></div>
+        </div>
+        <div class="scoreAndBoard">
+            <div class="score">
+                <div class="playerScore">
+                    <h3 id='displayPlayer01Name'>Player 01</h3>
+                    <span class="dot" id="player01Dot"></span>
+                    <h3 id="player01Score">0</h3>
+                </div>
+                <div class="playerScore">
+                    <h3 id='displayPlayer02Name'>Player 02</h3>
+                    <span class="dot" id="player02Dot"></span>
+                    <h3 id="player02Score">0</h3>
+                </div>
+            </div>
+            <div class="board">
+                <table>
+                    <tr>
+                        <td class="square" id="square1"></td>
+                        <td class="square" id="square2"></td>
+                        <td class="square" id="square3"></td>
+                    </tr>
+                    <tr>
+                        <td class="square" id="square4"></td>
+                        <td class="square" id="square5"></td>
+                        <td class="square" id="square6"></td>
+                    </tr>
+                    <tr>
+                        <td class="square" id="square7"></td>
+                        <td class="square" id="square8"></td>
+                        <td class="square" id="square9"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="buttons">
+                <button id="newGame">New </br> Game</button>
+                <button id="resetScore">Reset </br> Score</button>
+            </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./JS/main.js"></script>
+</body>
+
+</html>
