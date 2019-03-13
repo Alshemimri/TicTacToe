@@ -10,8 +10,8 @@ var $player02Id = $('#player02Id')
 var player01Id = $player01Id.text()
 var player02Id = $player02Id.text()
 
-var player01Name = 'player 1';
-var player02Name = 'player 2';
+var player01Name = 'Player 1';
+var player02Name = 'Player 2';
 var $player01Name = $('#player01Name')
 var $player02Name = $('#player02Name')
 
@@ -67,7 +67,7 @@ function getName() {
 function playButton() {
     $('#play').on('click', function () {
         $('.welcome').css("display", "none");
-        $('.game').css("visibility", "visible");
+        $('.game').css("display", "flex");
 
         getName();
         startGame();
@@ -172,8 +172,9 @@ function resetScore() {
 
 function switchTurn() {
     if (checkWin(document.turn)) {
-        // $message.text(document.turn + ' Won!!!!');
-        swal(document.turn + "Won!");
+        
+            swal(document.turn + "Won!");
+        
         document.winner = document.turn;
         if (document.winner == player01Id) {
             score[0]++;
@@ -216,9 +217,7 @@ function onHover(){
         $(event.target).css('background-color','#DAF0EE');
     })
 
-    // $('#player01IdOptions').on('click',function(){
-    //     $($player01Id).addClass('animated infinite jello')
-    // })
+
 
 }
 
@@ -395,7 +394,7 @@ function switchTurnAi() {
         // swal(player02Id + "Won!");
         swal({
             title: "I win",
-            icon: '../tenor.gif',
+            icon: '../images/tenor.gif',
 
         });
         document.turn = player02Id
