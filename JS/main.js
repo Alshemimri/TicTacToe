@@ -26,7 +26,7 @@ $(document).ready(function () {
     onHover();
 })
 
-// Welome
+// Landing Page 
 function changeCharacter() {
     $('#player01IdOptions').on('click', function () {
         if ($(event.target).text() == player02Id) {
