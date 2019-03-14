@@ -61,5 +61,11 @@ To make the game detects early draws.
 Add online multiplayer mode.
 build a responsive design.
 
+***
+
+## Acknowledgments
+⋅⋅* [Sweetalert](https://sweetalert.js.org)
+⋅⋅* [AnimateIt](https://daneden.github.io/animate.css/)
+
 
 
